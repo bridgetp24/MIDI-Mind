@@ -11,6 +11,8 @@
 		57D1B06427D7DE9400DDD6E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D1B06327D7DE9400DDD6E2 /* ContentView.swift */; };
 		57D1B06627D7DE9500DDD6E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D1B06527D7DE9500DDD6E2 /* Assets.xcassets */; };
 		57D1B06927D7DE9600DDD6E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D1B06827D7DE9600DDD6E2 /* Preview Assets.xcassets */; };
+		57D1B07027D7E62800DDD6E2 /* Stones&BouldersMIDIUpdated.mid in Resources */ = {isa = PBXBuildFile; fileRef = 57D1B06F27D7E62800DDD6E2 /* Stones&BouldersMIDIUpdated.mid */; };
+		57D1B07227D7E69800DDD6E2 /* gs_instruments.dls in Resources */ = {isa = PBXBuildFile; fileRef = 57D1B07127D7E69800DDD6E2 /* gs_instruments.dls */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		57D1B06327D7DE9400DDD6E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57D1B06527D7DE9500DDD6E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D1B06827D7DE9600DDD6E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57D1B06F27D7E62800DDD6E2 /* Stones&BouldersMIDIUpdated.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Stones&BouldersMIDIUpdated.mid"; sourceTree = "<group>"; };
+		57D1B07127D7E69800DDD6E2 /* gs_instruments.dls */ = {isa = PBXFileReference; lastKnownFileType = file; path = gs_instruments.dls; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		57D1B06027D7DE9400DDD6E2 /* MIDI Mind */ = {
 			isa = PBXGroup;
 			children = (
+				57D1B07127D7E69800DDD6E2 /* gs_instruments.dls */,
+				57D1B06F27D7E62800DDD6E2 /* Stones&BouldersMIDIUpdated.mid */,
 				57D1B06127D7DE9400DDD6E2 /* MIDI_MindApp.swift */,
 				57D1B06327D7DE9400DDD6E2 /* ContentView.swift */,
 				57D1B06527D7DE9500DDD6E2 /* Assets.xcassets */,
@@ -125,8 +131,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D1B07227D7E69800DDD6E2 /* gs_instruments.dls in Resources */,
 				57D1B06927D7DE9600DDD6E2 /* Preview Assets.xcassets in Resources */,
 				57D1B06627D7DE9500DDD6E2 /* Assets.xcassets in Resources */,
+				57D1B07027D7E62800DDD6E2 /* Stones&BouldersMIDIUpdated.mid in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

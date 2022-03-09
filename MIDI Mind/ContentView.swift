@@ -6,34 +6,60 @@
 //
 
 import SwiftUI
-
+import AVKit
+/**
+ Simple MIDI player app that plays and pauses MIDI audio
+ */
 struct ContentView: View {
+    @State var playButton = "play.circle"
+    @State var playText = "Play"
+    @State var brainColor = Color.pink
+    var midiSong = MIDISong(midiFileName: "invention2_part2multi",midiFileExt: "mid")
     var body: some View {
-        VStack {
-        Text("MIDI Mind")
-            .padding()
-            .font(.system(size:60))
-            Spacer()
-            HStack(spacing:20.0) {
-            Button(action: {
-                print("try to play music")
-            }, label: {
-                Image(systemName: "play.circle.fill")
+        ZStack {
+            LinearGradient(colors: [brainColor,.white],startPoint: .top, endPoint: .center)
+            VStack {
+            Text("MIDI Mind")
+                .padding()
+                .font(.system(size:60))
+                Spacer()
+                HStack(spacing:20.0) {
+                    Text(playText)
+                        .foregroundColor(Color.blue)
+                    .padding()
+                    .font(.system(size:50))
+                Button(action: playPause) {
+                    Image(systemName: playButton)
+                }
+            }.font(.system(size: 60))
+                Spacer()
+                Image("brain")
+                    
+                    
+            }.onAppear(perform: {
+                midiSong.midiPlayer.prepareToPlay()
             })
-            Button(action: {
-                print("pause music")
-            }, label: {
-                Image(systemName: "pause.circle.fill")
-            })
-            
-        }.font(.system(size: 60))
-            Spacer()
-            Image("brain")
-                
-                
         }
-        
     }
+    func playPause() {
+        if(playButton == "play.circle") {
+            playSong()
+        }else {
+            pauseSong()
+        }
+    }
+
+    func playSong() {
+        midiSong.playSong()
+        playButton = "pause.circle"
+        playText = "Pause"
+    }
+    func pauseSong() {
+        midiSong.playSong()
+        playButton = "play.circle"
+        playText = "Play"
+    }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {

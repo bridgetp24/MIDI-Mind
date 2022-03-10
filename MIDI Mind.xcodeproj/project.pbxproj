@@ -16,6 +16,7 @@
 		57DAF51E27D9285900E5AECE /* invention2_part2multi.mid in Resources */ = {isa = PBXBuildFile; fileRef = 57DAF51D27D9285900E5AECE /* invention2_part2multi.mid */; };
 		57DAF52027D9290800E5AECE /* MIDISong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DAF51F27D9290800E5AECE /* MIDISong.swift */; };
 		57DAF52427D92B4100E5AECE /* gs_instruments2.dls in Resources */ = {isa = PBXBuildFile; fileRef = 57DAF52327D92B4100E5AECE /* gs_instruments2.dls */; };
+		57DAF52927D934F300E5AECE /* Stones&BouldersMIDI2.mid in Resources */ = {isa = PBXBuildFile; fileRef = 57DAF52827D934F300E5AECE /* Stones&BouldersMIDI2.mid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		57DAF51F27D9290800E5AECE /* MIDISong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISong.swift; sourceTree = "<group>"; };
 		57DAF52327D92B4100E5AECE /* gs_instruments2.dls */ = {isa = PBXFileReference; lastKnownFileType = file; path = gs_instruments2.dls; sourceTree = "<group>"; };
 		57DAF52527D930C300E5AECE /* MIDI-Mind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MIDI-Mind-Info.plist"; sourceTree = SOURCE_ROOT; };
+		57DAF52827D934F300E5AECE /* Stones&BouldersMIDI2.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Stones&BouldersMIDI2.mid"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		57D1B06027D7DE9400DDD6E2 /* MIDI Mind */ = {
 			isa = PBXGroup;
 			children = (
+				57DAF52827D934F300E5AECE /* Stones&BouldersMIDI2.mid */,
 				57DAF52527D930C300E5AECE /* MIDI-Mind-Info.plist */,
 				57DAF52327D92B4100E5AECE /* gs_instruments2.dls */,
 				57DAF51F27D9290800E5AECE /* MIDISong.swift */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57DAF52427D92B4100E5AECE /* gs_instruments2.dls in Resources */,
+				57DAF52927D934F300E5AECE /* Stones&BouldersMIDI2.mid in Resources */,
 				57D1B07227D7E69800DDD6E2 /* gs_instruments.dls in Resources */,
 				57D1B06927D7DE9600DDD6E2 /* Preview Assets.xcassets in Resources */,
 				57D1B06627D7DE9500DDD6E2 /* Assets.xcassets in Resources */,

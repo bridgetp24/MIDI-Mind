@@ -20,7 +20,6 @@ class MIDISong {
     }
     func playSong() {
         midiPlayer.play({
-            self.pauseSong()
         })
     }
     func pauseSong() {

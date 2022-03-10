@@ -14,7 +14,7 @@ struct ContentView: View {
     @State var playButton = "play.circle"
     @State var playText = "Play"
     @State var brainColor = Color.pink
-    var midiSong = MIDISong(midiFileName: "invention2_part2multi",midiFileExt: "mid")
+    var midiSong = MIDISong(midiFileName: "Stones&BouldersMIDI2",midiFileExt: "mid")
     var body: some View {
         ZStack {
             LinearGradient(colors: [brainColor,.white],startPoint: .top, endPoint: .center)
@@ -25,11 +25,12 @@ struct ContentView: View {
                 Spacer()
                 HStack(spacing:20.0) {
                     Text(playText)
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(Color.black)
                     .padding()
                     .font(.system(size:50))
                 Button(action: playPause) {
                     Image(systemName: playButton)
+                        .foregroundColor(Color.black)
                 }
             }.font(.system(size: 60))
                 Spacer()
@@ -55,7 +56,7 @@ struct ContentView: View {
         playText = "Pause"
     }
     func pauseSong() {
-        midiSong.playSong()
+        midiSong.pauseSong()
         playButton = "play.circle"
         playText = "Play"
     }
